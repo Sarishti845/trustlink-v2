@@ -395,6 +395,7 @@ import { FaSearch, FaMapMarkerAlt, FaFilter } from "react-icons/fa";
 function BrowseServicesPage() {
   const [providers, setProviders] = useState([]);
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState(''); // State for errors
 
   // State for header search
@@ -406,7 +407,8 @@ function BrowseServicesPage() {
   const [sortBy, setSortBy] = useState("Highest Rated");
   const [priceFilter, setPriceFilter] = useState("All Prices");
   
-  const navigate = useNavigate(); // Initialize navigate
+  // eslint-disable-next-line no-unused-vars
+  const navigate = useNavigate(); // Initialize navigate  
 
   // --- THIS IS THE UPDATED useEffect ---
   useEffect(() => {
