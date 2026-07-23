@@ -1,0 +1,118 @@
+.how-it-works-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.how-it-works-section h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.how-it-works-section > p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 60px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hiw-step-card {
+  max-width: 350px;
+  position: relative;
+}
+
+.hiw-step-icon-wrapper {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(100%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  color: #64748b;
+  font-size: 1.5rem;
+}
+
+.hiw-step-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hiw-step-1 { background-color: #3b82f6; }
+.hiw-step-2 { background-color: #16a34a; }
+.hiw-step-3 { background-color: #f97316; }
+
+.hiw-step-card h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.hiw-step-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.guarantee-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  background-color: #f8fafc; /* Light grey background */
+  border-radius: 20px;       /* Rounded corners */
+  padding: 50px 30px;        /* Padding inside the box */
+  border: 1px solid #e2e8f0; /* Subtle border */
+  max-width: 1100px;         /* Limit the width of the box */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guarantee-card {
+  max-width: 250px;
+}
+
+.guarantee-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.guarantee-card h4 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.guarantee-card p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.icon-green { background-color: #16a34a; }
+.icon-blue { background-color: #3b82f6; }
+.icon-purple { background-color: #8b5cf6; }
+.icon-orange { background-color: #f97316; }

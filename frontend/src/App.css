@@ -1,0 +1,29 @@
+
+html {
+  scroll-behavior: smooth;
+}
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f7f9fc;
+  font-family: 'Inter', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Sticky Footer Styles --- */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure App takes full viewport height */
+}
+
+main {
+  flex-grow: 1; /* Allows the main content to take up available space */
+}
+/* --- End Sticky Footer Styles --- */
+
+/* You might have other global styles here */

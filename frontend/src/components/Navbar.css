@@ -1,0 +1,116 @@
+.navbar {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #e2e8f0;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+/* .navbar-logo {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+} */
+ .navbar-logo {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex; /* Aligns icon and text */
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+.nav-item {
+  color: #475569;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.nav-item:hover {
+  color: #3b82f6;
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+a.nav-btn-signin, a.nav-btn-signup {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+}
+.nav-btn-signin {
+  background-color: white;
+  color: #1e293b;
+}
+.nav-btn-signup {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.nav-user-name {
+  color: #475569;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  white-space: nowrap; /* Prevents name from wrapping */
+  
+}
+
+.nav-btn-logout {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background-color: white;
+  color: #1e293b;
+}
+
+.nav-btn-logout:hover {
+  background-color: #f8f9fa;
+}
+.logo-icon {
+  color: #3b82f6; /* Blue color for the icon */
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 2.5rem; /* Make icon slightly larger */
+}
+
+
+.nav-btn-dashboard {
+  background: #eaf1ff;
+  color: #1e4ed8;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn-dashboard:hover {
+  background: #d4e2ff;
+}

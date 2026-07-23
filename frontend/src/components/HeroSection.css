@@ -1,0 +1,99 @@
+.hero-section {
+  background-color: #3b82f6;
+  padding: 60px 20px;
+  color: white;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #facc15; /* Yellow color for "Verified" */
+}
+
+.subheading {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.search-form {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 700px;
+}
+
+.input-group {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.find-services-btn {
+  background-color: #f97316; /* Orange color */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end; /* Aligns button with bottom of input box */
+  height: 44px;
+}
+
+.hero-image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 12px;
+}

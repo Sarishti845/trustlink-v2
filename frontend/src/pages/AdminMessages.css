@@ -1,0 +1,40 @@
+.admin-messages-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.admin-messages-container h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 12px 15px;
+  border-left: 4px solid #2563eb;
+}
+
+.msg-text {
+  color: #111827;
+  font-size: 1rem;
+}
+
+.msg-time {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: right;
+}

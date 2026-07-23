@@ -1,0 +1,506 @@
+.provider-info-page {
+  padding: 60px 100px;
+  background-color: #f9fafc;
+  color: #222;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.provider-info-hero {
+  text-align: center;
+  margin-bottom: 70px;
+  padding: 80px 20px 70px;
+  background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 90%);
+  border-radius: 12px;
+  position: relative;
+  animation: fadeUp 0.8s ease both;
+}
+
+.provider-info-hero::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  width: 320px;
+  height: 220px;
+  /* background: url("/assets/provider-illustration.svg") no-repeat center/contain; */
+  opacity: 0.25;
+}
+
+.provider-info-hero h1 {
+  font-size: 2.6rem;
+  color: #1a1a1a;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.provider-info-hero p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* BENEFITS */
+.info-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.benefit-card {
+  position: relative;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eef2f6;
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 1px;
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* PROCESS */
+.info-process {
+  text-align: center;
+  background: #eef4ff;
+  padding: 70px 50px;
+  border-radius: 16px;
+  margin-bottom: 80px;
+}
+
+.info-process h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.process-step {
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-3px);
+}
+
+.step-number {
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+/* CTA */
+.info-cta {
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #8b5cf6);
+  color: white;
+  padding: 90px 20px;
+  border-radius: 16px;
+  margin-top: 60px;
+  animation: fadeUp 0.8s ease both;
+}
+
+.info-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-cta p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  max-width: 650px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+  color: #f5f5f5;
+}
+
+.apply-now-btn {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.apply-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease both;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .provider-info-page {
+    padding: 40px 25px;
+  }
+
+  .provider-info-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .process-step {
+    width: 100%;
+  }
+
+  .info-cta {
+    padding: 70px 20px;
+  }
+}
+
+/* .step-number {
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  color: #fff;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+} */
+/* .process-step {
+  width: 90%;
+  max-width: 600px;
+} */
+
+.info-cta {
+  text-align: center;
+  background: linear-gradient(270deg, #007bff, #8b5cf6, #007bff);
+  background-size: 600% 600%;
+  color: white;
+  padding: 90px 20px;
+  border-radius: 16px;
+  margin-top: 60px;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ keeps all cards left-aligned */
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.process-step {
+  background: white;
+  border-radius: 10px;
+  padding: 18px 24px 18px 30px; /* extra left padding for number spacing */
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.process-step:hover {
+  transform: translateY(-3px);
+}
+
+/* ✅ Left-aligned circular numbers */
+.step-number {
+  position: absolute;
+  left: 12px;
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Text spacing so it doesn’t overlap the number */
+.process-step p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 35px; /* shifts text right of number */
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ centers the white boxes horizontally */
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the white boxes */
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.process-step {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  padding: 18px 24px 18px 60px; /* space for number */
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center; /* ✅ ensures number & text align vertically */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-3px);
+}
+
+/* ✅ Number perfectly in line with text */
+.step-number {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%); /* vertically centers number */
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.process-step p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 1px;
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-image: linear-gradient(white, white),
+                    linear-gradient(135deg, #007bff, #8b5cf6);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.benefit-card:hover {
+  border: 2px solid transparent;
+  border-image: linear-gradient(135deg, #007bff, #8b5cf6);
+  border-image-slice: 1;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+.benefit-card {
+  position: relative;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  overflow: hidden; /* ✅ ensures pseudo-element border stays within shape */
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #007bff, #8b5cf6);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none; /* ✅ ensures text and hover still work */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0; /* ✅ sits behind content */
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+.benefit-card * {
+  position: relative;
+  z-index: 1; /* ✅ ensures text/icons are above gradient layer */
+}
+.benefit-card {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e9f2;
+}
+
+.benefit-card:hover {
+  border: 1.5px solid transparent;
+  border-image: linear-gradient(135deg, rgba(0,123,255,0.8), rgba(0,123,255,0.3));
+  border-image-slice: 1;
+  border-radius: 20px;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 123, 255, 0.08);
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, rgba(0,123,255,0.25), rgba(0,123,255,0.1)) border-box;
+}
+.benefit-card:hover {
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, rgba(0,123,255,0.6), rgba(0,123,255,0.2));
+  border-image-slice: 1;
+  border-radius: 18px;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.06);
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, rgba(0,123,255,0.15), rgba(0,123,255,0.05)) border-box;
+}
+.benefit-icon {
+  color: rgba(0,123,255,0.85);
+}
+.benefit-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  transition: all 0.25s ease-in-out;
+}

@@ -1,0 +1,231 @@
+
+/* -------- ADMIN TABS -------- */
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.tab {
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+
+
+.admin-page-container {
+  max-width: 900px;
+  margin: 50px auto; /* Increased top/bottom margin */
+  padding: 30px 40px; /* Increased padding */
+  background-color: white; /* Add white background card */
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.admin-page-container h1 {
+  text-align: center;
+  margin-bottom: 40px; /* Increased margin */
+  color: #1e293b;
+  font-size: 2rem; /* Slightly larger */
+}
+
+.pending-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pending-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc; /* Lighter background for items */
+  padding: 20px; /* Increased padding */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.pending-item span {
+  color: #334155;
+  font-size: 0.95rem; /* Slightly adjust font size */
+  line-height: 1.5; /* Improve readability */
+}
+.pending-item span strong {
+    color: #1e293b; /* Darker label */
+}
+
+
+.approve-btn {
+  padding: 10px 18px; /* Adjusted padding */
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background-color: #16a34a; /* Green */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add hover effect */
+}
+.approve-btn:hover {
+    background-color: #15803d; /* Darker green on hover */
+}
+/* Updated pending-item layout */
+.pending-item {
+  display: grid; /* Use grid for better column control */
+  grid-template-columns: 3fr 1fr; /* Info takes 3 parts, actions take 1 */
+  align-items: start; /* Align items to the top */
+  gap: 20px; /* Space between columns */
+  background-color: #f8fafc;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.provider-info span {
+  display: inline-block; /* Allow margin-bottom */
+  margin-bottom: 5px; /* Spacing between lines */
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.provider-info span strong {
+    color: #1e2e3b;
+    min-width: 90px; /* Align labels */
+    display: inline-block;
+}
+
+.provider-actions {
+    display: flex;
+    flex-direction: column; /* Stack buttons/links vertically */
+    align-items: flex-end; /* Align to the right */
+    gap: 10px; /* Space between items */
+}
+
+.doc-link {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5px 0; /* Add some clickable area */
+}
+.doc-link:hover {
+    color: #2563eb;
+}
+
+.approve-btn {
+  padding: 10px 18px; /* Slightly larger */
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background-color: #16a34a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.approve-btn:hover {
+    background-color: #15803d;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pending-item {
+  display: grid; /* Keep using grid */
+  grid-template-columns: 1fr; /* Change to a single column layout */
+  gap: 15px; /* Add gap between info and buttons */
+  background-color: #f8fafc;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.provider-info span {
+  display: block; /* Make each info line take full width */
+  margin-bottom: 8px; /* Spacing between lines */
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.provider-info span strong {
+    color: #1e2e3b;
+    min-width: 90px;
+    display: inline-block;
+}
+
+.provider-actions {
+    display: flex; /* Use flexbox for buttons */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 15px; /* Space between buttons */
+    margin-top: 15px; /* Space above buttons */
+    padding-top: 15px; /* Space above buttons */
+    border-top: 1px solid #e2e8f0; /* Separator line */
+}
+
+.doc-link {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    text-decoration: underline;
+    cursor: pointer;
+    /* Align link with buttons if needed */
+    align-self: center; /* Vertically center with buttons */
+    margin-right: auto; /* Push links to the left */
+    padding: 5px 0;
+}
+
+
+
+/* --- NEW DECLINE BUTTON STYLE --- */
+.decline-btn {
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background-color: #ef4444; /* Red */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.decline-btn:hover {
+    background-color: #dc2626; /* Darker red */
+}
+.provider-actions {
+    display: flex;
+    justify-content: space-between; /* Space out links and buttons */
+    align-items: center; /* Vertically align items */
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+.doc-links-container {
+    display: flex;
+    flex-direction: column; /* Stack links */
+    gap: 5px;
+}
+.action-buttons-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}

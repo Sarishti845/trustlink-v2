@@ -1,0 +1,59 @@
+.footer {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 50px 20px 0 20px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.footer-about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+.footer-about p {
+  line-height: 1.6;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.footer-links h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: white;
+}
+.footer-links a {
+  display: block;
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer-links a:hover {
+  color: #3b82f6;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #334155;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+  display: flex; /* Aligns icon and text */
+  align-items: center;
+}
+
+.footer-logo-icon {
+  color: #3b82f6; /* Blue color for the icon */
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.8rem; /* Make icon slightly larger */
+}

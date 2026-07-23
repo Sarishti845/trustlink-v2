@@ -1,0 +1,87 @@
+.join-section {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.join-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #f7f9fc;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.join-content {
+    flex: 1;
+}
+
+.join-content h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+}
+
+.join-content p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #475569;
+}
+
+.check-icon {
+    color: #22c55e;
+    font-size: 1.2rem;
+}
+
+.join-buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.apply-btn, .learn-more-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.apply-btn {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+}
+
+.learn-more-btn {
+    background-color: white;
+    color: #1e293b;
+    border-color: #cbd5e1;
+}
+
+.join-image-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.join-image-container img {
+    width: 100%;
+    border-radius: 12px;
+}

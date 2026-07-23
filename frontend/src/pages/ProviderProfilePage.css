@@ -1,0 +1,355 @@
+.profile-page {
+  background-color: #f7f9fc;
+  padding-bottom: 50px;
+}
+
+.profile-header {
+  background-color: white;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+}
+
+.profile-header-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.verified-badge-profile {
+  background-color: #22c55e;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.profile-header-info p {
+  margin: 5px 0 0 0;
+  color: #64748b;
+}
+
+.profile-body {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+  gap: 30px;
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+.profile-main-content {
+  flex: 2;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.profile-booking-card {
+  flex: 1;
+  position: sticky; /* Makes the card stay in place on scroll */
+  top: 110px; /* Adjust based on your Navbar height */
+  height: fit-content;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.booking-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.booking-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.profile-tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.tab-btn {
+  padding: 15px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+  color: #3b82f6;
+  background-color: white;
+  border-bottom-color: #3b82f6;
+}
+
+.tab-content {
+  padding: 30px;
+}
+
+.tab-content h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+.about-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.credentials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credentials-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #334155;
+}
+
+.credential-icon {
+  color: #22c55e;
+}
+
+.service-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #334155;
+}
+
+.service-details-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.service-details-list span:first-child {
+  font-weight: 500;
+}
+
+.service-details-list span:last-child {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.services-offered-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.service-offered-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+}
+
+.service-offered-card h4 {
+  margin: 0 0 5px 0;
+}
+
+.service-offered-card p {
+  margin: 0 0 15px 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.service-offered-card .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tier-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.tier-popular {
+  background-color: #3b82f6;
+  color: white;
+}
+.tier-premium {
+  background-color: #1e293b;
+  color: white;
+}
+/* New styles for the enhanced booking card */
+.profile-booking-card {
+  flex: 1;
+  position: sticky;
+  top: 110px;
+  height: fit-content;
+  background-color: white;
+  padding: 25px; /* Increased padding */
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+}
+
+.booking-price {
+  font-size: 2.5rem; /* Larger price font */
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.booking-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #64748b;
+  display: block; /* Make "per hour" appear on new line */
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 14px; /* Slightly larger padding */
+  font-size: 1.1rem; /* Slightly larger font */
+  font-weight: 600;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #2563eb;
+}
+
+.send-message-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3b82f6;
+  background-color: white;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.send-message-btn:hover {
+  background-color: #e0f2fe;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0; /* Separator line */
+  padding-bottom: 25px;
+}
+
+.contact-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-icon-wrapper:hover {
+  background-color: #e2e8f0;
+}
+
+.contact-icon-wrapper svg {
+  color: #475569;
+  font-size: 1.2rem;
+}
+
+.booking-additional-info {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.info-item span:first-child {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.info-item span:last-child {
+  /* color: #1e293b; */
+  font-weight: 600;
+}
+
+/* .info-item .available-now {
+  color: #22c55e;
+} */
+
+.available-now {
+  color: #22c55e !important; /* This forces the color to be green */
+  font-weight: 600;
+}
