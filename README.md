@@ -138,8 +138,23 @@ The app will be available at `http://localhost:3000`, connecting to the backend 
 | GET | `/api/admin/pending-providers` | List providers awaiting approval | Yes (Admin) |
 
 ## Screenshots
+### Homepage
+![Homepage](screenshots/homepage.png)
 
-*Add a few screenshots from your `/mnt/user-data` uploads here — homepage, provider profile, booking flow, and admin dashboard work well.*
+### Provider Profile
+![Provider Profile](screenshots/provider-profile.png)
+
+### Booking Flow
+![Booking Flow](screenshots/booking-flow.png)
+
+### Payment (Razorpay)
+![Razorpay Payment](screenshots/Razorpay.png)
+
+### Customer Dashboard
+![Customer Dashboard](screenshots/customer-dashborad.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ## Roadmap / Known Limitations
 
